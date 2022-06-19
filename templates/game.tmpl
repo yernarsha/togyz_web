@@ -1,0 +1,30 @@
+<html>
+    <h1>
+        {{ .game.WhiteName }} - {{ .game.BlackName }} {{ .game.Result }}
+    </h1>
+    
+ <table style="width:100%">
+   <tr>
+    <th style="width:5%">Id</th>
+    <th style="width:25%">White</th>
+    <th style="width:25%">Black</th>
+    <th style="width:5%">Result</th>
+    <th style="width:20%">Event</th>
+    <th style="width:5%">Date</th>
+    <th style="width:15%">Site</th>
+  </tr>
+  
+  <tr>
+    <td>{{ .game.Id }}.</td>
+    <td>{{ .game.WhiteName }}</td>
+    <td>{{ .game.BlackName }}</td>
+    <td>{{ .game.Result }}</td>
+    <td>{{ .game.Event }}</td>
+    <td>{{ .game.Date }}</td>
+    <td>{{ .game.Site }}</td>
+  </tr>
+</table>   
+
+<p>{{ .game.Notation }}</p>
+
+</html>

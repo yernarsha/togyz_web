@@ -1,0 +1,30 @@
+<html>
+    <h1>
+        {{ .title }}
+    </h1>
+    
+ <table style="width:100%">
+   <tr>
+    <th style="width:5%">Id</th>
+    <th style="width:25%">White</th>
+    <th style="width:25%">Black</th>
+    <th style="width:5%">Result</th>
+    <th style="width:20%">Event</th>
+    <th style="width:5%">Date</th>
+    <th style="width:15%">Site</th>
+  </tr>
+  
+  {{ range .games }}
+  <tr>
+    <td><a href="/game/{{ .Id }}" target="_blank">{{ .Id }}.</a></td>
+    <td>{{ .WhiteName }}</td>
+    <td>{{ .BlackName }}</td>
+    <td>{{ .Result }}</td>
+    <td>{{ .Event }}</td>
+    <td>{{ .Date }}</td>
+    <td>{{ .Site }}</td>
+  </tr>
+  {{ end }}
+</table>     
+
+</html>

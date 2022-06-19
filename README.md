@@ -4,5 +4,7 @@ Togyz Kumalak (or Toguz Kumalak or Toguz Korgool) is a very interesting Kazakh-K
 
 If you want to play against pretty strong AI, check this Android app: https://play.google.com/store/apps/details?id=com.yernar.mastertk
 
+go get -u github.com/mattn/go-sqlite3
+go get -u github.com/gin-gonic/gin
 
 Thanks to Jeremy Morgan
